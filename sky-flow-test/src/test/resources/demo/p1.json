@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    {
+      "id": "A",
+      "name": "node名称",
+      "type": "SERVICE_TASK",
+      "delegate": "org.sky.flow.generate.TestDelegate",
+      "beforeListener": "org.sky.flow.generate.InvokerListener",
+      "afterListener": "org.sky.flow.generate.InvokerListener",
+      "properties": {}
+    },
+    {
+      "id": "B",
+      "name": "node名称",
+      "type": "SERVICE_TASK",
+      "delegate": "org.sky.flow.generate.TestDelegate",
+      "beforeListener": "org.sky.flow.generate.InvokerListener",
+      "afterListener": "org.sky.flow.generate.InvokerListener",
+      "properties": {}
+    }
+  ],
+  "relations": [
+    {
+      "sourceId": "A",
+      "targetId": "B"
+    }
+  ]
+}
